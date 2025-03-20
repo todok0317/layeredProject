@@ -45,6 +45,6 @@ public class MemoController {
     public ResponseEntity<MemoResponseDto> createMemo(@RequestBody MemoRequestDto dto) {
 
         // Service Layer 호출, 응답
-        return new ResponseEntity<>(memoService.saveMemo(requsetDto), HttpStatus.CREATED);
+        return new ResponseEntity<>(memoService.saveMemo(dto), HttpStatus.CREATED);
     }
 }
