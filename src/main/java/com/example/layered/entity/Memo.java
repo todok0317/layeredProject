@@ -9,7 +9,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Memo {
 
-    @Setter // 꼭 필드위에 세터를 해야함
     private Long id;
     private String title;
     private String contents;
